@@ -6,3 +6,4 @@
 ./install_zoxide.sh
 ./install_stow.sh
 ./install_superfile.sh
+./install_rakubrew.sh
