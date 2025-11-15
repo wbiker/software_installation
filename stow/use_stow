@@ -1,5 +1,0 @@
-Following command creates symlink from stow/i3/.config/i3/config to ~/.config/i3/config
-You must be in the stow directory:
-stow --dotfiles -t ~/ i3
-
---dotfiles = files beginning with 'dot-' is used like a dot file. 'dot-' is replaces by .
