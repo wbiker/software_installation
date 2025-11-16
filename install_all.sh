@@ -8,3 +8,4 @@
 ./install_stow.sh
 ./install_superfile.sh
 ./install_rakubrew.sh
+install_xsel.sh

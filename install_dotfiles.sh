@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ORIGINAL_DIR=$(pwd)
-REPO_URL="https://github.com/wbiker/dotfiles.git"
+REPO_URL="git@github.com:wbiker/dotfiles.git"
 REPO_NAME="dotfiles"
 
 is_stow_installed() {
@@ -28,11 +28,11 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.cache/nvim/
 
   cd "$REPO_NAME"
-  stow zshrc
-  stow ghostty
-  stow tmux
+#  stow zshrc
+#  stow ghostty
+#  stow tmux
   stow nvim
-  stow starship
+#  stow starship
 else
   echo "Failed to clone the repository."
   exit 1
