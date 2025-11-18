@@ -12,6 +12,11 @@ if [ -n "$BASH_VERSION" ]; then
     if [ ! -f "$PROFILE_FILE" ]; then
         touch "$PROFILE_FILE"
         echo "Created $PROFILE_FILE"
+
+        # source .bashrc. needed for oh-my-bash
+        if [[ -f ~/.bashrc ]]; then
+          source ~/.bashrc
+        fi
     fi
     
     # Check if the line already exists in the file
