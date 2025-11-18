@@ -26,12 +26,16 @@ fi
 if [ $? -eq 0 ]; then
   echo "removing old configs"
   rm -rf ~/.config/nvim ~/.local/share/nvim/ ~/.cache/nvim/
+  rm -rf ~/.config/i3/config
+  rm -rf ~/.config/polybar/config.ini ~/.config/polybar/scripts ~/.config/polybar/launch.sh
 
   cd "$REPO_NAME"
 #  stow zshrc
 #  stow ghostty
 #  stow tmux
   stow nvim
+  stow i3
+  stow polybar
 #  stow starship
 else
   echo "Failed to clone the repository."
