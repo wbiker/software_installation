@@ -1,13 +1,13 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 
-./install_ohmybash.sh
-./install_git.sh
-./install_nvim.sh
-#./install_yay.sh
-./install_zoxide.sh
-./install_stow.sh
-./install_superfile.sh
-./install_rakubrew.sh
-./install_xsel.sh
-./install_dotfiles.sh
-./install_tmux.sh
+./ohmybash_install.sh
+./git_install.sh
+./nvim_install.sh
+#./yay_install.sh
+./zoxide_install.sh
+./stow_install.sh
+./superfile_install.sh
+./rakubrew_install.sh
+./xsel_install.sh
+./dotfiles_install.sh
+./tmux_install.sh
