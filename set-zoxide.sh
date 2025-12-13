@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [[ -z $BASH_VERSION ]]; then
+if [ -n "${BASH_VERSION}" ]; then
   echo "BASH found"
     PROFILE_FILE="$HOME/.bash_profile"
     ZOXIDE_INIT='eval "$(zoxide init --cmd cd bash)"'
-elif [[ -z $ZSH_VERSION ]]; then
+elif [ -n "${ZSH_VERSION}" ]; then
   echo "ZSH found"
   PROFILE_FILE="$HOME/.zshrc"
   ZOXIDE_INIT='eval "$(zoxide init --cmd cd zsh)"';

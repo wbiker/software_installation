@@ -34,8 +34,8 @@ if [ $? -eq 0 ]; then
 #  stow ghostty
 #  stow tmux
   stow nvim
-  stow i3
-  stow polybar
+#  stow i3
+#  stow polybar
 #  stow starship
 else
   echo "Failed to clone the repository."
