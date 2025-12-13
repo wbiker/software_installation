@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-./ohmybash_install.sh
+#./ohmybash_install.sh
 ./git_install.sh
 ./nvim_install.sh
 #./yay_install.sh
