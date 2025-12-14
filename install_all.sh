@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-./git_install.sh
+#./git_install.sh
 ./nvim_install.sh
 #./yay_install.sh
 ./zoxide_install.sh
@@ -12,4 +12,5 @@
 ./tmux_install.sh
 ./set-zoxide.sh
 ./set-rakubrew.sh
-./ohmybash_install.sh
+./npm_install.sh
+#./ohmybash_install.sh
