@@ -1,15 +1,18 @@
 #!/bin/bash
 
-if [ -n "${BASH_VERSION}" ]; then
-  echo "BASH found"
-    PROFILE_FILE="$HOME/.bashrc"
-    ZOXIDE_INIT='eval "$(zoxide init --cmd cd bash)"'
-elif [ -n "${ZSH_VERSION}" ]; then
-  echo "ZSH found"
+ZSH_PATH=$(which zsh)
+BASH_PATH=$(which bash)
+
+if [ "$SHELL" = "$BASH_PATH" ]; then
+  echo "The active shell is bash."
+  PROFILE_FILE="$HOME/.bashrc"
+  ZOXIDE_INIT='eval "$(zoxide init --cmd cd bash)"'
+elif [ "$SHELL" =  "$ZSH_PATH" ]; then
+  echo "The active shell is zsh."
   PROFILE_FILE="$HOME/.zshrc"
   ZOXIDE_INIT='eval "$(zoxide init --cmd cd zsh)"';
 else
-    echo "Current shell is not bash. Skipping..."
+    echo "The active shell is neither bash nor zsh. ...skipping."
     exit 1
 fi
 
@@ -17,7 +20,6 @@ fi
 if [ ! -f "$PROFILE_FILE" ]; then
     touch "$PROFILE_FILE"
     echo "Created $PROFILE_FILE"
-
 fi
 
 if [ -n "$BASH_VERSION" ]; then
