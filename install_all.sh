@@ -15,4 +15,5 @@
 ./set-zoxide.sh
 ./set-rakubrew.sh
 ./npm_install.sh
+./rofi_install.sh
 #./ohmybash_install.sh
