@@ -14,6 +14,8 @@
 ./tmux_install.sh
 ./set-zoxide.sh
 ./set-rakubrew.sh
+./syncthing_install.sh
 ./npm_install.sh
 ./rofi_install.sh
+./waybar_adds_install.sh
 #./ohmybash_install.sh
