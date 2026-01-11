@@ -18,4 +18,6 @@
 ./npm_install.sh
 ./rofi_install.sh
 ./waybar_adds_install.sh
+./kmymoney_install.sh
+./polkitagent_install.sh
 #./ohmybash_install.sh

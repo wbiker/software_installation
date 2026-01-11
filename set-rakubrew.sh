@@ -3,6 +3,8 @@
 ZSH_PATH=$(which zsh)
 BASH_PATH=$(which bash)
 
+$HOME/.rakubrew/bin mode shim
+
 if [ "$SHELL" = "$BASH_PATH" ]; then
   echo "The active shell is bash."
   PROFILE_FILE="$HOME/.bashrc"
