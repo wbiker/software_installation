@@ -1,8 +1,6 @@
 #!/usr/bin/bash
 
-#./git_install.sh
 ./nvim_install.sh
-#./yay_install.sh
 ./zsh_install.sh
 ./alacritty_install.sh
 ./zoxide_install.sh
@@ -12,14 +10,13 @@
 ./xsel_install.sh
 ./dotfiles_install.sh
 ./tmux_install.sh
-./set-zoxide.sh
-./set-rakubrew.sh
 ./syncthing_install.sh
 ./npm_install.sh
-./rofi_install.sh
-./waybar_adds_install.sh
 ./kmymoney_install.sh
 ./polkitagent_install.sh
 ./btop_install.sh
+./gdu_install.sh
+
 ./set-git.sh
-#./ohmybash_install.sh
+./set-zoxide.sh
+./set-rakubrew.sh

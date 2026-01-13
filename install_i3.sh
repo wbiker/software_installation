@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 ./install_software.sh
-./waybar_install.sh
+./rofi_install.sh
