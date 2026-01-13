@@ -21,4 +21,5 @@
 ./kmymoney_install.sh
 ./polkitagent_install.sh
 ./btop_install.sh
+./set-git.sh
 #./ohmybash_install.sh
